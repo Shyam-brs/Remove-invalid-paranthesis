@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valid Parentheses</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Valid Parentheses</h1>
+      <p>
+        The isValidString function takes a string s as input and checks if it is
+        a valid string of parentheses. It does this by initializing a balance
+        variable to 0 and then iterating through each character in the string.
+        If the character is an opening parenthesis, it increments the balance by
+        1. If the character is a closing parenthesis, it decrements the balance
+        by 1. If at any point the balance becomes negative, it immediately
+        returns false because this indicates that there is a closing parenthesis
+        without a corresponding opening parenthesis. After iterating through all
+        the characters, if the balance is equal to 0, it returns true,
+        indicating that the string is valid. Otherwise, it returns false.
+      </p>
+      <label for="inputString">Enter a string:</label>
+      <input
+        type="text"
+        id="inputString"
+        placeholder="Enter string with parantheses"
+      />
+      <button onclick="removeInvalidParentheses()">
+        Remove Invalid Parentheses
+      </button>
+      <ul id="validStrings"></ul>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
